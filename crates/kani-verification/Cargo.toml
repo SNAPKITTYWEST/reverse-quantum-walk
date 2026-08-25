@@ -1,0 +1,8 @@
+[package]
+name = "kani-verification"
+version = "0.1.0"
+edition = "2021"
+description = "Kani model-checking harness for recurrence engine bounds"
+
+[dependencies]
+engine = { path = "../engine" }

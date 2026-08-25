@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "crates/engine",
+    "crates/kani-verification",
+]
+resolver = "2"

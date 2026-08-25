@@ -1,0 +1,7 @@
+[package]
+name = "engine"
+version = "0.1.0"
+edition = "2021"
+description = "Reverse Quantum Walk recurrence engine — Q16.16 fixed-point, microbit shattering, CAD kernel"
+
+[dependencies]
