@@ -7,6 +7,8 @@
 // Run: cargo kani
 // ============================================================
 
+pub mod arithmetic_loop;
+
 use engine::recurrence::{RecurrenceState, StepParameters, SCALE, L_EFF_MAX, TAU_R_MAX_DRIFT};
 
 #[cfg(kani)]
