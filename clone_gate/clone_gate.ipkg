@@ -1,0 +1,21 @@
+package clone_gate
+
+authors    = "Ahmad Ali Parr, Jessica Westerhoff"
+version    = 0.1.0
+license    = "BSL-1.1 / AGPL-3.0 / MPL-2.0"
+
+sourcedir  = "src"
+builddir   = "build"
+
+modules = Hash
+        , WORM
+        , Manifest
+        , Main
+
+executable = "clone_gate"
+main       = Main
+
+-- C shim for SHA-256 (OpenSSL)
+cflags  = "-I/usr/include/openssl"
+libs    = "ssl crypto"
+cfiles  = "cbits/hash_shim.c"
